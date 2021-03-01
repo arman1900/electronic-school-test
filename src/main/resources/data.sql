@@ -1,9 +1,3 @@
-CREATE TABLE users
-(
-    id int(11) NOT NULL AUTO_INCREMENT,
-    Firstname varchar(100) NOT NULL,
-    email varchar(100) NOT NULL,
-    login varchar(100) NOT NULL,
-    Secondname varchar(100) NOT NULL,
-    PRIMARY KEY (id)
-);
+INSERT INTO users (Secondname, firstname, email, login) VALUES
+('lala', 'lala', 'test@mail.ru', 'test'),
+('lolo', 'lolo', 'test@gmail.com', 'test1');
