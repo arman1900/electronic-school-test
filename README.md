@@ -5,8 +5,7 @@
 
 cd electronic-school-test 
 ## 3.0 Разворачиваем проект используя maven
-Перед тем как развернуть проект убедитесь что у вас локально имеется база данных mysql с названием test
-
+Перед тем как развернуть проект убедитесь что у вас локально имеется база данных mysql с названием test, также укажите user и password от mysql в папке которая находится в следующем пути: src/main/resources/application.properties
 mvn clean install
 
 ## 4.0 Запускаем сервер Java spring
