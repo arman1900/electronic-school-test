@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Student</h2>
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>Student Id</th>
+      <th>Firstname</th>
+      <th>Login</th>
+      <th>Email</th>
+      <th>Secondname</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users; let i = index">
+      <td>{{i+1}}</td>
+      <td>{{user.firstname}}</td>
+      <td>{{user.login}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.secondname}}</td>
+      <td><button class="btn btn-warning" (click)="deleteUser(user.id)" class="btn btn-danger">Delete User</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
